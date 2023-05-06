@@ -1,0 +1,96 @@
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .todo {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .todo input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #333;
+    font-size: 16px;
+    width: 250px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .todo input[type="text"]:focus {
+    border-bottom: 2px solid #48c1e6;
+    box-shadow: 0 0 10px #48c1e6;
+  }
+  
+  .todo button {
+    background-color: #48c1e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .todo button:hover {
+    background-color: #3c9bb5;
+  }
+  
+  .show-item {
+    margin-top: 20px;
+  }
+  
+  .show-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .show-item li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #eee;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .show-item li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .show-item li span {
+    font-size: 16px;
+    flex: 1;
+  }
+  
+  .show-item li button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .show-item li button:hover {
+    background-color: #e53935;
+  }
+  
+  .show-item li button:first-of-type {
+    background-color: #48c1e6;
+  }
+  
+  .show-item li button:first-of-type:hover {
+    background-color: #3c9bb5;
+  }
+  
