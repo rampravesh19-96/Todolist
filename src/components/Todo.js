@@ -13,11 +13,11 @@ function Todo() {
   const addItem = (e) => {
     e.preventDefault();
     if(!item){
-        alert("its cant be empty")
+        alert("cant't add empty list")
         return
     }    
     if(data.find(it => it===item)){
-        alert("already exist")
+        alert("item already exist")
         return
     }
     setData([...data, item]);
